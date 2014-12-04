@@ -1,20 +1,24 @@
 {
-    "name": "ketwaroo/laravel-framework-util",
-    "description": "Adds an extra kick to laravel.",
-    "authors": [
-        {
-            "name": "Ketwaroo Yaasir",
-            "email": "ketwaroo.yaasir@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Ketwaroo\\LaravelFrameworkUtil": "src/"
-        }
-    },
-    "minimum-stability": "stable"
+	"name": "ketwaroo/laravel-framework-util",
+	"description": "Adds an extra kick to laravel.",
+	"authors": [
+		{
+			"name": "Ketwaroo Yaasir",
+			"email": "ketwaroo.yaasir@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"illuminate/support": "4.2.*",
+		"doctrine/dbal": "2.5.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Ketwaroo\\LaravelFrameworkUtil": "src/"
+		},
+		"files": [
+			"src/_helpers/util_helpers.php"
+		]
+	},
+	"minimum-stability": "stable"
 }

@@ -1,8 +1,11 @@
-<?php namespace Ketwaroo\LaravelFrameworkUtil;
+<?php 
 
-use Illuminate\Support\ServiceProvider;
 
-class LaravelFrameworkUtilServiceProvider extends ServiceProvider {
+namespace Ketwaroo\LaravelFrameworkUtil;
+
+use ServiceProvider\AbstractServiceProvider;
+
+class LaravelFrameworkUtilServiceProvider extends ServiceProvider\AbstractServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
