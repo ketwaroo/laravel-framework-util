@@ -1,14 +1,14 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Util;
 
 /**
  * CMS HTML class.
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  * @package cccisd
  * @subpackage tools
  */

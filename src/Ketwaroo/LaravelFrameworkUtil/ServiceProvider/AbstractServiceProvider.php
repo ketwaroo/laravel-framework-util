@@ -1,21 +1,18 @@
 <?php
 
-/**
- * @license http://www.opensource.org/licenses/mit-license.php MIT
- * @author Yaasir Ketwaroo <ketwaroo.yaasir@fmail.com>
- */
-use Illuminate\Support\ServiceProvider;
-
 namespace Ketwaroo\LaravelFrameworkUtil\ServiceProvider;
+
+use Illuminate\Support\ServiceProvider;
+use Ketwaroo\LaravelFrameworkUtil\Util\Package;
 
 /**
  * Description of AbstractServiceProvider
- *
- * @author "Yaasir Ketwaroo <ketwaroo@3cisd.com>"
+ * @license http://www.opensource.org/licenses/mit-license.php MIT
+ * @author "Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>"
  */
 abstract class AbstractServiceProvider extends ServiceProvider
 {
-    
+
     protected $_packageFullName
             , $_vendorName
             , $_packageName
@@ -166,8 +163,10 @@ abstract class AbstractServiceProvider extends ServiceProvider
      */
     public function readPackageInstanceConfig($key, $default = NUll)
     {
+
         if(
-                ($r      = \Route::current()) && ($prefix = $r->getPrefix())
+                ($r      = \Route::current())
+                && ($prefix = $r->getPrefix())
         )
         {
 
@@ -232,4 +231,3 @@ abstract class AbstractServiceProvider extends ServiceProvider
     }
 
 }
-

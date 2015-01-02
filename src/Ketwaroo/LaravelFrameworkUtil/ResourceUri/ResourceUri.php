@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\ResourceUri;
@@ -11,7 +11,7 @@ use Ketwaroo\LaravelFrameworkUtil\Constant as FConst;
 /**
  * Description of ResourceUri
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class ResourceUri
 {
@@ -37,7 +37,7 @@ class ResourceUri
 
             if(empty($handler))
             {
-                if((\Cccisd\Util\Package::isPackageNamespaceString($uri)))
+                if((\Ketwaroo\LaravelFrameworkUtil\Package::isPackageNamespaceString($uri)))
                 {
                     $handler = FConst::RESOURCEURI_SCHEMA_ASSET; // if package string should always be asset.
                 }
@@ -127,7 +127,7 @@ class ResourceUri
      */
     public function serveDevFile($packageName, $file)
     {
-        $filePath = \Cccisd\Util\Package::detectPackageBasePath($packageName) . '/public' . $file;
+        $filePath = \Ketwaroo\LaravelFrameworkUtil\Package::detectPackageBasePath($packageName) . '/public' . $file;
 
         if(!is_file($filePath))
         {
@@ -151,7 +151,7 @@ class ResourceUri
 
         $tmp = \Response::make(file_get_contents($filePath), 200, [
                     'Content-Disposition' => 'inline',
-                    'Content-Type'        => (isset($extOverride[$ext])) ? $extOverride[$ext] : \Cccisd\Util\File::determineMime($filePath),
+                    'Content-Type'        => (isset($extOverride[$ext])) ? $extOverride[$ext] : \Ketwaroo\LaravelFrameworkUtil\File::determineMime($filePath),
         ]);
 
         return $tmp;

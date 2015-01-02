@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Patterns;
@@ -14,7 +14,7 @@ use Ketwaroo\LaravelFrameworkUtil\Util\Variable;
  * GUID strings are a possible solution to dissonant systems that need to share
  * relationships between entities.
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 trait TraitTableWithGuid
 {

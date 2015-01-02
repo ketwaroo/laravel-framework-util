@@ -1,17 +1,17 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Patterns;
 
-use \Cccisd\Util\Package as PackageUtil;
+use \Ketwaroo\LaravelFrameworkUtil\Package as PackageUtil;
 
 /**
  * Description of TraitIsInPackage
  * @experimental
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 trait TraitIsInPackage
 {

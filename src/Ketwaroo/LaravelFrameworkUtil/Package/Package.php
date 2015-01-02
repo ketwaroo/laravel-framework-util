@@ -10,7 +10,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Package;
 /**
  * Description of Package
  *
- * @author "Yaasir Ketwaroo <ketwaroo@3cisd.com>"
+ * @author "Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>"
  */
 class Package
 {

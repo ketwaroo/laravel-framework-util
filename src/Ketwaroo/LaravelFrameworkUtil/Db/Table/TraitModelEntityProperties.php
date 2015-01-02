@@ -5,8 +5,8 @@ namespace Ketwaroo\LaravelFrameworkUtil\Db\Table;
 use Ketwaroo\LaravelFrameworkUtil\Db\Table\AbstractTableEntityProp;
 
 /**
- * @copyright (c) 2014, 3C Institute
- * @author "Yaasir Ketwaroo <ketwaroo@3cisd.com>"
+ * 
+ * @author "Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>"
  */
 Trait TraitModelEntityProperties
 {

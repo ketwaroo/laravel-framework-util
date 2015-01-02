@@ -14,7 +14,7 @@ class Text
      * converts a bit of text to lower dash form.
      * convert "It's alive!!! non-stick" to "its-alive-non-stick"
      * commonly used for urls
-     * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+     * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
      * @param type $str
      * @return string lower-dash-string
      */
@@ -65,7 +65,7 @@ class Text
 
     /**
      * Attempts to unaccent a string 
-     * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+     * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
      * @param $str input string
      * @return string input string without accent
      */

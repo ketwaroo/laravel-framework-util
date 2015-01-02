@@ -1,6 +1,6 @@
 <?php
 
-namespace Cccisd\Util\Xml;
+namespace Ketwaroo\LaravelFrameworkUtil\Xml;
 // added namespace for autoloading
 
 /**

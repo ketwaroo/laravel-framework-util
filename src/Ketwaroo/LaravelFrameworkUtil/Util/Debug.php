@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Util;
@@ -9,7 +9,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Util;
 /**
  * Debugging utils
  * @todo note to self; add stack trace parsing util.
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class Debug
 {
@@ -55,7 +55,7 @@ class Debug
 
     /**
      * Short hand variable dumper. takes any number of arguments.
-     * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+     * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
      */
     public static function prnt()
     {
@@ -85,7 +85,7 @@ class Debug
 
     /**
      * Variable dumper then die;
-     * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+     * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
      */
     public static function prntd()
     {

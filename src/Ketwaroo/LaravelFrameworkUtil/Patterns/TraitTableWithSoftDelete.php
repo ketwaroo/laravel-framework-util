@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Patterns;
@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * Fixes what laravel's soft delete was missing.
  * only works with cccisd/framework tables though.
  *
- * @author "Yaasir Ketwaroo <ketwaroo@3cisd.com>"
+ * @author "Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>"
  */
 trait TraitTableWithSoftDelete
 {

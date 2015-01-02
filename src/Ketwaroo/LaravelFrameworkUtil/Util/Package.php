@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Util;
@@ -9,7 +9,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Util;
 /**
  * Description of Helpers
  * @todo make facade possibly
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class Package
 {
@@ -171,16 +171,10 @@ class Package
     {
         return (preg_match('~^[a-z0-9\-]+/[a-z0-9\-]+\:\:.*?~', (string) $def)) ? true : false;
     }
-
-    public static function detectPackageAssetPath($def)
-    {
-        $pub = static::getPackageAssetPath($def);
-
-        return is_file($pub) ? $pub : static::getUnpublishedAssetPath($def);
-    }
-
+    
+    
     /**
-     * 
+     * get the relative
      * @param string $def namespaced string vendor/package::path/to/file.ext
      * @return boolean|string
      */
@@ -208,12 +202,26 @@ class Package
     }
 
     /**
+     * 
+     * @param string vendor/package::patt/to/file.extension
+     * @return type
+     */
+    public static function detectPackageAssetPath($def)
+    {
+        $pub = static::getPublishedAssetPath($def);
+
+        return is_file($pub) ? $pub : static::getPackagedAssetPath($def);
+    }
+
+
+
+    /**
      * attempts to get path to a *published* asset file.
      * 
      * @param string $def vendor/package::path/to/file.extension
      * @return string|boolean
      */
-    public static function getPackageAssetPath($def, $mock = true)
+    public static function getPublishedAssetPath($def, $mock = true)
     {
         if(file_exists($def)) // so it detects directories too.
         {
@@ -275,7 +283,7 @@ class Package
      * @param string $def vendor/package::path/to/file.extension
      * @return string|boolean
      */
-    public static function getUnpublishedAssetPath($def)
+    public static function getPackagedAssetPath($def)
     {
         if(file_exists($def))
         {
@@ -313,7 +321,7 @@ class Package
             return $def;
         }
 
-        $test = static::getPackageAssetPath($def, $mock);
+        $test = static::getPublishedAssetPath($def, $mock);
         if(empty($test))
         {
             return false;

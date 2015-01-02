@@ -1,17 +1,13 @@
 <?php
 
-/**
- * @copyright (c) 2014, 3C Institute
- */
-
 namespace Ketwaroo\LaravelFrameworkUtil\ResourceUri\Schema;
 
-use Cccisd\Util\Package as PackageUtil;
+use Ketwaroo\LaravelFrameworkUtil\Package;
 
 /**
- * Description of FileSystem
+ * 
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class Asset extends SchemaAbstract
 {
@@ -20,8 +16,8 @@ class Asset extends SchemaAbstract
 
     /**
      * 
-     * @param string $path
-     * @return \Cccisd\GameResource\ResourceUri\Asset
+     * @return \Ketwaroo\LaravelFrameworkUtil\ResourceUri\Schema\Asset
+     * @throws \InvalidArgumentException
      */
     public function parse()
     {
@@ -30,10 +26,10 @@ class Asset extends SchemaAbstract
 
         $path = $this->getLocation();
 
-        if((PackageUtil::isPackageNamespaceString($path)))
+        if((Package::isPackageNamespaceString($path)))
         {
-            $this->setResolvedPath(PackageUtil::detectPackageAssetPath($path));
-            $this->setResolvedUrl(PackageUtil::detectPackageAssetUrl($path));
+            $this->setResolvedPath(Package::detectPackageAssetPath($path));
+            $this->setResolvedUrl(Package::detectPackageAssetUrl($path));
         }
         else
         {

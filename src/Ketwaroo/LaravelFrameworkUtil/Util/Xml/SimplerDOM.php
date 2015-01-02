@@ -1,15 +1,15 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
-namespace Cccisd\Util\Xml;
+namespace Ketwaroo\LaravelFrameworkUtil\Xml;
 
 /**
  * Extends SimpleDOM.
  * @TODO Add.. stuff. This is a placeholder for future improvements.
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class SimplerDOM extends SimpleDOM
 {
@@ -94,7 +94,7 @@ class SimplerDOM extends SimpleDOM
     {
         $tmp = $this->asXML();
 
-        return \Cccisd\Util\XML::fromString($tmp);
+        return \Ketwaroo\LaravelFrameworkUtil\XML::fromString($tmp);
     }
     /**
      * 

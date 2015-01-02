@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Util;
@@ -9,7 +9,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Util;
 /**
  * File utils
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  * @package cccisd/util
  */
 class File
@@ -72,7 +72,7 @@ class File
 
     /**
      * updates /data/mime-types with data from http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=co
-     * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+     * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
      */
     public static function refreshMimeMap()
     {

@@ -1,18 +1,18 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\ServiceProvider;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Cccisd\Util\Package;
+use Ketwaroo\LaravelFrameworkUtil\Package;
 
 /**
  * Description of ServiceProviderAbstract
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 abstract class ServiceProviderAbstract extends LaravelServiceProvider
 {

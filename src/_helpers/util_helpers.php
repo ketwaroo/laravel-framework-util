@@ -2,7 +2,7 @@
 
 /**
  * Loose helper functions in global namespace
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 
 /**
@@ -10,7 +10,7 @@
  */
 function yk_is_debug()
 {
-    return \Cccisd\Util\Debug::envIsDebug();
+    return \Ketwaroo\LaravelFrameworkUtil\Debug::envIsDebug();
 }
 
 /**
@@ -20,7 +20,7 @@ function prnt()
 {
     if(yk_is_debug())
     {
-        call_user_func_array('\Cccisd\Util\Debug::prnt', func_get_args());
+        call_user_func_array('\Ketwaroo\LaravelFrameworkUtil\Debug::prnt', func_get_args());
     }
 }
 
@@ -31,7 +31,7 @@ function prntd()
 {
     if(yk_is_debug())
     {
-        call_user_func_array('\Cccisd\Util\Debug::prntd', func_get_args());
+        call_user_func_array('\Ketwaroo\LaravelFrameworkUtil\Debug::prntd', func_get_args());
     }
 }
 
@@ -43,7 +43,7 @@ function prntd()
  */
 function yk_reflect($obj)
 {
-    return \Cccisd\Util\Variable::getReflectionClass($obj);
+    return \Ketwaroo\LaravelFrameworkUtil\Variable::getReflectionClass($obj);
 }
 
 /**
@@ -54,7 +54,7 @@ function yk_reflect($obj)
  */
 function yk_reflect_func($callable)
 {
-    return \Cccisd\Util\Variable::getReflectionFunction($callable);
+    return \Ketwaroo\LaravelFrameworkUtil\Variable::getReflectionFunction($callable);
 }
 
 /**
@@ -66,7 +66,7 @@ function yk_reflect_func($callable)
  */
 function yk_parseopt($params, $defaults = array(), $strict = true)
 {
-    return \Cccisd\Util\Variable::parseopt($params, $defaults, $strict);
+    return \Ketwaroo\LaravelFrameworkUtil\Variable::parseopt($params, $defaults, $strict);
 }
 
 /**
@@ -76,7 +76,7 @@ function yk_parseopt($params, $defaults = array(), $strict = true)
  */
 function yk_package_get_serviceprovider_class($packageName)
 {
-    return \Cccisd\Util\Package::getPackageServiceProviderClassName($packageName);
+    return \Ketwaroo\LaravelFrameworkUtil\Package::getPackageServiceProviderClassName($packageName);
 }
 
 /**
@@ -86,7 +86,7 @@ function yk_package_get_serviceprovider_class($packageName)
  */
 function yk_package_get_namespace($packageName)
 {
-    return \Cccisd\Util\Package::getPackageNamespace($packageName);
+    return \Ketwaroo\LaravelFrameworkUtil\Package::getPackageNamespace($packageName);
 }
 
 /**
@@ -100,7 +100,7 @@ function yk_package_get_namespace($packageName)
  */
 function yk_resolve_namespaced($item)
 {
-    return \Cccisd\Util\Single\NamespacedItemResolver::instance()->parseKey($item);
+    return \Ketwaroo\LaravelFrameworkUtil\Single\NamespacedItemResolver::instance()->parseKey($item);
 }
 
 /**
@@ -117,13 +117,13 @@ function yk_resource_url($def)
 
 /**
  * 
- * @see Cccisd\Util\Variable::parseUrl()
+ * @see Ketwaroo\LaravelFrameworkUtil\Variable::parseUrl()
  * @param type $url
  * @return type
  */
 function yk_parse_url($url)
 {
-    return \Cccisd\Util\Variable::parseUrl($url);
+    return \Ketwaroo\LaravelFrameworkUtil\Variable::parseUrl($url);
 }
 
 /**

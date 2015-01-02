@@ -8,7 +8,7 @@ use Ketwaroo\LaravelFrameworkUtil\Util\Variable;
 /**
  * Minimal attribute handling.
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 trait TraitBaseModel
 {

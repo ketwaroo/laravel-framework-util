@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Filter;
@@ -11,7 +11,7 @@ use Ketwaroo\LaravelFrameworkUtil\Patterns\AbstractBaseModel;
 /**
  * Description of FilterPayload
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class FilterPayload
 {

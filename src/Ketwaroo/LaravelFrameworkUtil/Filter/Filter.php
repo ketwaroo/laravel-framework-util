@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Filter;
@@ -13,7 +13,7 @@ use Ketwaroo\LaravelFrameworkUtil\Filter\FilterPayload;
  * Akin to content filters in wordpress.
  * laravel has hooks but no filters.
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class Filter extends AbstractBaseModel
 {

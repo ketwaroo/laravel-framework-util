@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Db;
@@ -11,7 +11,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Db;
  * incompatible change but woraround is to have interfaces declare those static methods\
  * and the abstract class "implement" them.
  *
- * @author "Yaasir Ketwaroo <ketwaroo@3cisd.com>"
+ * @author "Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>"
  */
 interface InterfaceTable
 {

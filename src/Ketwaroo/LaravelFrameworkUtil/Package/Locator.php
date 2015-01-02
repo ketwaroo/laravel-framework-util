@@ -12,7 +12,7 @@ use Ketwaroo\LaravelFrameworkUtil\Package\Package;
 /**
  * Description of Locator
  *
- * @author "Yaasir Ketwaroo <ketwaroo@3cisd.com>"
+ * @author "Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>"
  */
 class Locator
 {

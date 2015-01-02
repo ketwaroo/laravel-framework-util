@@ -5,7 +5,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Patterns;
 /**
  * Experiment to cut down on that Facade rigmarole to get short static calls.
  * @experimental
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 trait TraitAutoCallStatic
 {

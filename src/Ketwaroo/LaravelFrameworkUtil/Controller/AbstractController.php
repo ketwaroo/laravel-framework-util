@@ -1,18 +1,18 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Controller;
 
 use \Illuminate\Routing\Controller as LaravelController;
-use Cccisd\Template\Template;
+use Ketwaroo\LaravelFrameworkUtil\Constant;
 
 /**
  * Description of ControllerAbstract
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 abstract class AbstractController extends LaravelController
 {
@@ -43,15 +43,12 @@ abstract class AbstractController extends LaravelController
      */
     protected $viewFile;
 
-    public function __construct(Template $page, \Request $request)
+    public function __construct(\Request $request)
     {
-        $this->layout  = $page;
         $this->request = $request;
-
         $this->init();
-
         // allow adding events at controller init
-        \Event::fire(\Ketwaroo\LaravelFrameworkUtil\Constant::EVENT_CONTROLLER_INIT, [$this]);
+        \Event::fire(Constant::EVENT_CONTROLLER_INIT, [$this]);
     }
 
     /**
@@ -164,7 +161,7 @@ abstract class AbstractController extends LaravelController
     {
         if(!isset($this->currentActionUri))
         {
-            $this->currentActionUri = \Cccisd\Util\Text::toLowerDash(preg_replace('~^action~', '', $this->getCurrentAction()));
+            $this->currentActionUri = \Ketwaroo\LaravelFrameworkUtil\Text::toLowerDash(preg_replace('~^action~', '', $this->getCurrentAction()));
         }
 
         return $this->currentActionUri;
@@ -335,7 +332,7 @@ abstract class AbstractController extends LaravelController
      */
     public function getControllerName()
     {
-        return \Cccisd\Util\Text::toLowerDash(basename(\Cccisd\Util\File::unixifyPath(get_called_class())));
+        return \Ketwaroo\LaravelFrameworkUtil\Text::toLowerDash(basename(\Ketwaroo\LaravelFrameworkUtil\File::unixifyPath(get_called_class())));
     }
 
     /**

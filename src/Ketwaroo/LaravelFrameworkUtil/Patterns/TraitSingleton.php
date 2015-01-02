@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Patterns;
@@ -11,7 +11,7 @@ namespace Ketwaroo\LaravelFrameworkUtil\Patterns;
  * This trait was written mostly to get used to explore a different way of doing things.
  * laravel framework may offer similar features.
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 trait TraitSingleton
 {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright (c) 2014, 3C Institute
+ * 
  */
 
 namespace Ketwaroo\LaravelFrameworkUtil\Migration;
@@ -11,7 +11,7 @@ use Illuminate\Database\Migrations\Migration as laravelMigration;
 /**
  * Description of Migration
  *
- * @author Yaasir Ketwaroo <ketwaroo@3cisd.com>
+ * @author Yaasir Ketwaroo <ketwaroo.yaasir@gmail.com>
  */
 class Migration extends laravelMigration
 {
@@ -31,7 +31,7 @@ class Migration extends laravelMigration
             // use package sub name            
             $class  = get_called_class();
             // get the package in vendor/package
-            list(, $package) = explode('/', \Cccisd\Util\Package::inWhichPackageAmI(ccc_reflect($class)->getFileName()));
+            list(, $package) = explode('/', \Ketwaroo\LaravelFrameworkUtil\Package::inWhichPackageAmI(ccc_reflect($class)->getFileName()));
             $prefix = snake_case($package);
         }
 
